@@ -1,3 +1,11 @@
+email: your-email@domain.com
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
 
 title: "Michael Singletary"
 tagline: ""
