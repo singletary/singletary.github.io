@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
 
-  <body>
+  <body {% if page.css_class or layout.css_class %}class="{{ page.css_class }}{{ layout.css_class }}"{% endif %}>
 
-    {% include header.html %}
+    {% unless page.layout == 'post' %}
+      {% include header.html %}
+    {% endunless %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    <main class="main__content" role="main">
+      {{ content }}
+    </main>
 
     {% include footer.html %}
 
   </body>
-
 </html>
