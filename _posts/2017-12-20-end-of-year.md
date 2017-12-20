@@ -18,7 +18,7 @@ Some winners:
 
 *P.S.: No referral links above. Click away!*
 
-Eero fixed me WiFi speed issues since upgrading to a gigabit line with FiOS. AirPort Extremes underperformed, unfortunately. Arlo lets me keep an eye on my home when I'm gone, and enables some great integrations with smart lights. Same goes for Ring 2, which I upgraded to from the original Ring. Huge image quality boost, fewer false motion alerts, excellent battery life. Outdoor smart plugs are my new jam — holiday decorations + automation = bliss. Finally got the new Wink Hub 2, which I needed for the switch for my outdoor porch light. Sonos stepped up, integrating with Amazon Echo, making it WAY easier to play music throughout my home. **Interesting**: Over half of my favorites are outdoor smart home products.
+**Eero** fixed me WiFi speed issues since upgrading to a gigabit line with FiOS. AirPort Extremes underperformed, unfortunately. **Arlo** lets me keep an eye on my home when I'm gone, and enables some great integrations with smart lights. Same goes for **Ring 2**, which I upgraded to from the original Ring. Huge image quality boost, fewer false motion alerts, excellent battery life. **Outdoor smart plugs** are my new jam — holiday decorations + automation = bliss. Finally got the new **Wink Hub 2**, which I needed for the switch for my outdoor porch light. **Sonos** stepped up, integrating with Amazon Echo, making it WAY easier to play music throughout my home. **Interesting**: Over half of my favorites are outdoor smart home products.
 
 Some losers:
 
