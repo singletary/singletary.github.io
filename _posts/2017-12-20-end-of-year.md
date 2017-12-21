@@ -28,4 +28,4 @@ Some losers:
 
 Google Home sucks. I said it. A firmware update required that I remove and re-add every smart home product... by design. It literally voice prompted me to do this when I tried to control my lights after the update. HomeKit feels like it doesn't exist. I have many HomeKit-capable products, but never think to ask Siri to use them. Finally, **WHERE IS MY HOMEPOD?**
 
-What's your favorite star home product or integration?
+What's your favorite smart home product or integration?
