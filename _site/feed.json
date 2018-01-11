@@ -6,6 +6,14 @@
 	"items": [
 		
 		{
+			"id": "http://singletary.micro.blog/2018/01/11/wireless-audio-after.html",
+	      	
+			"content_html": "<p><strong>Wireless Audio</strong>: After getting AirPods as a holiday gift from my wife, I’m really enjoying wireless audio. This extends to TV, too, with my Apple TV - something I just thought about. Thanks to Bluetooth, I’m watching Rogue One while my son naps on my lap in the living room.</p>\n",
+			"date_published": "2018-01-11T15:45:00-05:00",
+			"url": "https://singletary.me/2018/01/11/wireless-audio-after.html"
+		},
+		
+		{
 			"id": "http://singletary.micro.blog/2017/12/20/end-of-year.html",
 	      	
 			"content_html": "<p><strong>2017 End of Year Smart Home Report</strong>: This was a big year for my smart home. Lots of time and money invested in connected products to help secure my home and to make things more fun and enjoyable. The buzzword was “connected,” and I tried hard to apply this to every tech. product we bought.</p>\n\n<p>Some winners:</p>\n\n<ol>\n  <li><a href=\"https://eero.com/shop/pro-wifi-system\">eero Pro WiFi System</a></li>\n  <li><a href=\"https://www.arlo.com/en-us/products/arlo-pro/default.aspx\">Arlo Pro Wireless Security Cameras</a></li>\n  <li><a href=\"https://shop.ring.com/products/video-doorbell-2\">Ring Video Doorbell 2</a></li>\n  <li><a href=\"https://www.ihomeaudio.com/iSP100BC/\">iHome Wireless Outdoor Smart Plug</a></li>\n  <li><a href=\"https://www.amazon.com/50049-Outdoor-Wireless-Grounded-Outlets/dp/B00ZYLQZEK\">WiOn Wireless Outdoor Smart Plug (two sockets)</a></li>\n  <li><a href=\"https://www.wink.com/products/wink-hub-2/\">Wink Hub 2</a></li>\n  <li><a href=\"https://www.sonos.com/en-us/shop/connect.html\">Sonos</a></li>\n</ol>\n\n<p><em>P.S.: No referral links above. Click away!</em></p>\n\n<p><strong>Eero</strong> fixed me WiFi speed issues since upgrading to a gigabit line with FiOS. AirPort Extremes underperformed, unfortunately. <strong>Arlo</strong> lets me keep an eye on my home when I’m gone, and enables some great integrations with smart lights. Same goes for <strong>Ring 2</strong>, which I upgraded to from the original Ring. Huge image quality boost, fewer false motion alerts, excellent battery life. <strong>Outdoor smart plugs</strong> are my new jam — holiday decorations + automation = bliss. Finally got the new <strong>Wink Hub 2</strong>, which I needed for the switch for my outdoor porch light. <strong>Sonos</strong> stepped up, integrating with Amazon Echo, making it WAY easier to play music throughout my home. <strong>Interesting</strong>: Over half of my favorites are outdoor smart home products.</p>\n\n<p>Some losers:</p>\n\n<ol>\n  <li>Google Home</li>\n  <li>Apple HomeKit</li>\n  <li>Apple HomePod</li>\n</ol>\n\n<p>Google Home sucks. I said it. A firmware update required that I remove and re-add every smart home product… by design. It literally voice prompted me to do this when I tried to control my lights after the update. HomeKit feels like it doesn’t exist. I have many HomeKit-capable products, but never think to ask Siri to use them. Finally, <strong>WHERE IS MY HOMEPOD?</strong></p>\n\n<p>What’s your favorite smart home product or integration?</p>\n",
@@ -75,14 +83,6 @@
 			"content_html": "<p>Just some normal Monday night shopping.</p>\n\n<p><img src=\"http://singletary.micro.blog/uploads/2017/9489215773.jpg\" width=\"600\" height=\"600\" style=\"height: auto\" /></p>\n",
 			"date_published": "2017-05-08T21:04:00-05:00",
 			"url": "https://singletary.me/2017/05/08/020407.html"
-		},
-		
-		{
-			"id": "http://singletary.micro.blog/2017/05/07/a-wonderful-spring.html",
-	      	
-			"content_html": "<p>A wonderful spring day in the District for bourbon, BBQ, and bluegrass music at President Lincoln’s old summer cottage.</p>\n\n<p><img src=\"http://singletary.micro.blog/uploads/2017/ce8907204e.jpg\" width=\"600\" height=\"600\" style=\"height: auto\" /></p>\n",
-			"date_published": "2017-05-07T17:48:00-05:00",
-			"url": "https://singletary.me/2017/05/07/a-wonderful-spring.html"
 		}
 		
 	]
