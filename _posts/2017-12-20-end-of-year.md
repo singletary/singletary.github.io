@@ -1,7 +1,8 @@
 ---
 layout: post
 microblog: true
-date: 2017-12-20 00:36 -0500
+audio: 
+date: 2017-12-20 00:36:20 -0500
 guid: http://singletary.micro.blog/2017/12/20/end-of-year.html
 ---
 **2017 End of Year Smart Home Report**: This was a big year for my smart home. Lots of time and money invested in connected products to help secure my home and to make things more fun and enjoyable. The buzzword was "connected," and I tried hard to apply this to every tech. product we bought.
