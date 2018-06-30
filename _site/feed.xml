@@ -4,14 +4,14 @@
     <title>Michael Singletary</title>
     <description>Follow &lt;a href=&quot;https://micro.blog/singletary&quot;&gt;@singletary on Micro.blog&lt;/a&gt;.</description>
     <link>https://singletary.me/</link>
-    <pubDate>Thu, 11 Jan 2018 21:38:10 -0500</pubDate>
-    <lastBuildDate>Thu, 11 Jan 2018 21:38:10 -0500</lastBuildDate>
+    <pubDate>Sat, 30 Jun 2018 00:20:31 -0400</pubDate>
+    <lastBuildDate>Sat, 30 Jun 2018 00:20:31 -0400</lastBuildDate>
     
       <item>
       	
         <description>&lt;p&gt;&lt;strong&gt;Wireless Audio&lt;/strong&gt;: After getting AirPods as a holiday gift from my wife, I’m really enjoying wireless audio. This extends to TV, too, with my Apple TV - something I just thought about. Thanks to Bluetooth, I’m watching Rogue One while my son naps on my lap in the living room.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 11 Jan 2018 15:45:00 -0500</pubDate>
+        <pubDate>Thu, 11 Jan 2018 15:45:01 -0500</pubDate>
         <link>https://singletary.me/2018/01/11/wireless-audio-after.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2018/01/11/wireless-audio-after.html</guid>
       </item>
@@ -48,7 +48,7 @@
 
 &lt;p&gt;What’s your favorite smart home product or integration?&lt;/p&gt;
 </description>
-        <pubDate>Wed, 20 Dec 2017 00:36:00 -0500</pubDate>
+        <pubDate>Wed, 20 Dec 2017 00:36:20 -0500</pubDate>
         <link>https://singletary.me/2017/12/20/end-of-year.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/12/20/end-of-year.html</guid>
       </item>
@@ -59,7 +59,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://singletary.me/uploads/2017/7e16987bae.jpg&quot; width=&quot;600&quot; height=&quot;600&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Dec 2017 00:59:00 -0500</pubDate>
+        <pubDate>Fri, 01 Dec 2017 00:59:29 -0500</pubDate>
         <link>https://singletary.me/2017/12/01/ring-video-doorbell.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/12/01/ring-video-doorbell.html</guid>
       </item>
@@ -68,7 +68,7 @@
       	
         <description>&lt;p&gt;&lt;strong&gt;Redundant backups&lt;/strong&gt;: I wanted to find a solution to securely store my Time Machine backups in an off-site location, so that they were backed up redundantly. I currently back up to a home server with a RAID setup, just for backups, and decided to sync these backups to a cloud storage provider. &lt;a href=&quot;https://www.backblaze.com/b2/cloud-storage.html&quot;&gt;Backblaze B2 Cloud Storage&lt;/a&gt; is cheap ($0.005/GB/m) and was easy to get set up with &lt;a href=&quot;https://rclone.org/b2/&quot;&gt;rclone&lt;/a&gt;, so I decided to give that a shot. A simple script and crontab entry later, and I’ve fully automated my redundant remote backup solution. Excited to see how this works out!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 15 Jun 2017 22:01:00 -0500</pubDate>
+        <pubDate>Thu, 15 Jun 2017 23:01:16 -0400</pubDate>
         <link>https://singletary.me/2017/06/15/redundant-backups-i.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/06/16/redundant-backups-i.html</guid>
       </item>
@@ -86,8 +86,8 @@
 
 &lt;p&gt;More brief thoughts on why over the next week.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 14 Jun 2017 23:12:00 -0500</pubDate>
-        <link>https://singletary.me/2017/06/14/my-apple-product.html</link>
+        <pubDate>Thu, 15 Jun 2017 00:12:37 -0400</pubDate>
+        <link>https://singletary.me/2017/06/15/my-apple-product.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/06/15/my-apple-product.html</guid>
       </item>
     
@@ -97,7 +97,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://singletary.me/uploads/2017/7c7425d1d8.jpg&quot; width=&quot;600&quot; height=&quot;600&quot; style=&quot;height: auto&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 13 Jun 2017 20:29:00 -0500</pubDate>
+        <pubDate>Tue, 13 Jun 2017 21:29:41 -0400</pubDate>
         <link>https://singletary.me/2017/06/13/012941.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/06/14/012941.html</guid>
       </item>
@@ -106,7 +106,7 @@
       	
         <description>&lt;p&gt;&lt;strong&gt;Inconsistency with NETGEAR Orbi&lt;/strong&gt;: I recently purchased and returned an Orbi system in search of WiFi to get the most of my gigabit FiOS. Unfortunately the Orbi suffered from frequent disconnects, and full signal but no real connection. Disappointing from a highly rated system.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 13 Jun 2017 19:30:00 -0500</pubDate>
+        <pubDate>Tue, 13 Jun 2017 20:30:25 -0400</pubDate>
         <link>https://singletary.me/2017/06/13/inconsistency-with-netgear.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/06/14/inconsistency-with-netgear.html</guid>
       </item>
@@ -115,7 +115,7 @@
       	
         <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://singletary.blog/2017/06/04/wwdc17/&quot;&gt;My WWDC17 wish list&lt;/a&gt;&lt;/strong&gt;: Hoping for a few changes to Apple software this year at #WWDC. I’ve compiled a short list. What do you think? What’s on your list?&lt;/p&gt;
 </description>
-        <pubDate>Sun, 04 Jun 2017 22:30:00 -0500</pubDate>
+        <pubDate>Sun, 04 Jun 2017 23:30:34 -0400</pubDate>
         <link>https://singletary.me/2017/06/04/my-wwdc-wish.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/06/05/my-wwdc-wish.html</guid>
       </item>
@@ -124,7 +124,7 @@
       	
         <description>&lt;p&gt;Looking forward to #WWDC tomorrow, especially since Apple seems to be clearing out “show opening” news early - making room for bigger announcements? Always love seeing iOS evolve, and possibility of Siri home speaker is exciting. As always, wish I would be there.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 04 Jun 2017 19:23:00 -0500</pubDate>
+        <pubDate>Sun, 04 Jun 2017 20:23:13 -0400</pubDate>
         <link>https://singletary.me/2017/06/04/looking-forward-to.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/06/05/looking-forward-to.html</guid>
       </item>
@@ -135,7 +135,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://singletary.me/uploads/2017/9489215773.jpg&quot; width=&quot;600&quot; height=&quot;600&quot; style=&quot;height: auto&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 08 May 2017 21:04:00 -0500</pubDate>
+        <pubDate>Mon, 08 May 2017 22:04:07 -0400</pubDate>
         <link>https://singletary.me/2017/05/08/020407.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/05/09/020407.html</guid>
       </item>
@@ -146,7 +146,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://singletary.me/uploads/2017/ce8907204e.jpg&quot; width=&quot;600&quot; height=&quot;600&quot; style=&quot;height: auto&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 07 May 2017 17:48:00 -0500</pubDate>
+        <pubDate>Sun, 07 May 2017 18:48:15 -0400</pubDate>
         <link>https://singletary.me/2017/05/07/a-wonderful-spring.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/05/07/a-wonderful-spring.html</guid>
       </item>
@@ -155,7 +155,7 @@
       	
         <description>&lt;p&gt;I’ve been waiting for one of these &lt;a href=&quot;https://www.washingtonpost.com/news/business/wp/2017/05/05/amazon-to-open-a-real-live-physical-bookstore-in-d-c/&quot;&gt;Amazon Bookstores&lt;/a&gt; to pop up in DC for a while. Although I exclusively read books on my Kindle Oasis, I love browsing bookstores.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 06 May 2017 09:45:00 -0500</pubDate>
+        <pubDate>Sat, 06 May 2017 10:45:14 -0400</pubDate>
         <link>https://singletary.me/2017/05/06/ive-been-waiting.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/05/06/ive-been-waiting.html</guid>
       </item>
@@ -166,7 +166,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://singletary.me/uploads/2017/93b57a6a33.jpg&quot; width=&quot;600&quot; height=&quot;600&quot; style=&quot;height: auto&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 29 Apr 2017 22:57:00 -0500</pubDate>
+        <pubDate>Sat, 29 Apr 2017 23:57:31 -0400</pubDate>
         <link>https://singletary.me/2017/04/29/absolute-max-for.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/04/30/absolute-max-for.html</guid>
       </item>
@@ -177,7 +177,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://singletary.me/uploads/2017/9afb804415.jpg&quot; width=&quot;600&quot; height=&quot;600&quot; style=&quot;height: auto&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 29 Apr 2017 22:27:00 -0500</pubDate>
+        <pubDate>Sat, 29 Apr 2017 23:27:14 -0400</pubDate>
         <link>https://singletary.me/2017/04/29/fios-gigabit-internet.html</link>
         <guid isPermaLink="true">http://singletary.micro.blog/2017/04/30/fios-gigabit-internet.html</guid>
       </item>
