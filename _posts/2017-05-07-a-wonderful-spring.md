@@ -1,7 +1,8 @@
 ---
 layout: post
 microblog: true
-date: 2017-05-07 17:48 -0500
+audio: 
+date: 2017-05-07 17:48:15 -0500
 guid: http://singletary.micro.blog/2017/05/07/a-wonderful-spring.html
 ---
 A wonderful spring day in the District for bourbon, BBQ, and bluegrass music at President Lincoln's old summer cottage.
