@@ -1,7 +1,8 @@
 ---
 layout: post
 microblog: true
-date: 2017-06-14 23:12 -0500
+audio: 
+date: 2017-06-14 23:12:37 -0500
 guid: http://singletary.micro.blog/2017/06/15/my-apple-product.html
 ---
 **My Apple product wish list**: Feels like a good time to be an Apple user. Current lineup extremely impressive. Here's what I want:
