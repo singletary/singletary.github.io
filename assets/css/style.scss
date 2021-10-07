@@ -2,8 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-table {
-border: 0px;
+table, tr, td {
+border: none;
 }
 img {
   border-radius: 50%;
