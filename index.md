@@ -1,2 +1,1 @@
-## Singletary.org
-### The Singletary Family
+## The Singletary Family
