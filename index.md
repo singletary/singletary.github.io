@@ -10,3 +10,4 @@ currently running on my Synology:
 - [FreshRSS](https://freshrss.org/)
 - [Wallabag](https://wallabag.org/)
 - [ArchiveBox](https://archivebox.io/)
+- [Firefox](https://github.com/linuxserver/docker-firefox/)
