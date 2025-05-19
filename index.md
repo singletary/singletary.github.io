@@ -2,6 +2,7 @@
 
 check me out on:
 - [Threads](https://threads.com/singletary/)
+- [Bluesky](https://bsky.app/profile/michael.singletary.org/)
 - [Mastodon](https://mastodon.social/@singletary/)
 - [LinkedIn](https://www.linkedin.com/in/michaelsingletary/)
   
