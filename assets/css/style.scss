@@ -12,7 +12,7 @@ table, tr, td {
 @media (prefers-color-scheme: dark) {
   html, body {
     background-color: #121212 !important;
-    background: #121212 !important;
+    background-image: none !important; /* ← this is the key line */
     color: #f5f5f5 !important;
   }
 
@@ -27,6 +27,11 @@ table, tr, td {
 
   h1, h2, h3 {
     color: #f5f5f5 !important;
+  }
+
+  code, pre {
+    background-color: #2a2a2a !important;
+    color: #eee !important;
   }
 
   img {
