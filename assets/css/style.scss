@@ -2,9 +2,31 @@
 ---
 
 @import "{{ site.theme }}";
+
 table, tr, td {
-border: none;
+  border: none;
 }
+
 img {
   border-radius: 50%;
+}
+
+/* 🌙 Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+
+  a {
+    color: #8ab4f8;
+  }
+
+  table {
+    background-color: #1e1e1e;
+  }
+
+  img {
+    filter: brightness(0.9);
+  }
 }
