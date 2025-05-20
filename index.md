@@ -5,6 +5,7 @@ check me out on:
 - [Bluesky](https://bsky.app/profile/michael.singletary.org/)
 - [Mastodon](https://mastodon.social/@singletary/)
 - [LinkedIn](https://www.linkedin.com/in/michaelsingletary/)
+- [GitHub](https://github.com/singletary)
   
 currently running on my Synology:
 - [Jellyfin](https://jellyfin.org/)
