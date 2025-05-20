@@ -11,12 +11,13 @@ table, tr, td {
 /* Force dark mode background overrides */
 @media (prefers-color-scheme: dark) {
   html, body {
+    background: none !important; /* 💥 nukes bg image and color */
     background-color: #121212 !important;
-    background-image: none !important; /* ← this is the key line */
     color: #f5f5f5 !important;
   }
 
-  .wrapper, .header, .footer {
+  .wrapper, .inner, header, footer {
+    background: none !important;
     background-color: transparent !important;
     color: inherit !important;
   }
