@@ -11,14 +11,19 @@ table, tr, td {
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   html, body {
-    background: none !important;
     background-color: #121212 !important;
     color: #f5f5f5 !important;
   }
 
+  #container {
+    background-image: none !important;
+    background-color: #121212 !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0 !important;
+  }
+
   .wrapper, .inner, header, footer {
     background: none !important;
-    background-color: transparent !important;
     color: inherit !important;
   }
 
@@ -37,5 +42,29 @@ table, tr, td {
 
   img {
     filter: brightness(0.95);
+  }
+
+  /* Sharpen and brighten main content text and links */
+  #main_content {
+    color: #e0e0e0 !important;                 /* Sharper gray */
+    font-weight: 400 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #main_content p {
+  color: #cccccc !important;
+  font-weight: 400 !important;
+  margin: 0 0 1.25em 0 !important;   /* Restore vertical rhythm */
+  }
+
+  #main_content a {
+    color: #8ab4f8 !important;                /* Same blue as footer for consistency */
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  #main_content a:hover {
+    text-decoration: underline;
   }
 }
