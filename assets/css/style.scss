@@ -68,3 +68,10 @@ table, tr, td {
     text-decoration: underline;
   }
 }
+
+/* Remove text shadows in dark mode */
+@media (prefers-color-scheme: dark) {
+  body, a, p, h1, h2, h3, h4, h5, h6, li, span {
+    text-shadow: none !important;
+  }
+}
