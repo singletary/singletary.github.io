@@ -12,4 +12,5 @@ currently running on my Synology:
 - [FreshRSS](https://freshrss.org/)
 - [Wallabag](https://wallabag.org/)
 - [ArchiveBox](https://archivebox.io/)
+- [Kavita](https://www.kavitareader.com/)
 - [Firefox](https://github.com/linuxserver/docker-firefox/)
