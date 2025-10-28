@@ -1,35 +1,335 @@
-![Michael Singletary](/assets/images/IMG_3454.jpeg?resize=300%2C300&ssl=1 "Michael Singletary")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark">
+  <title>Michael Singletary — IT Engineer</title>
+  <meta name="description" content="Senior Enterprise Endpoint Management Engineer. Jamf at scale. AI-assisted automation, scripting, and research.">
+  <style>
+    :root{
+      --bg: #0b0c0f;
+      --text: #e6e7eb;
+      --muted: #a3a7af;
+      --card: #12141a;
+      --accent: #7ddcfa;
+      --accent-2: #9ef0c0;
+      --border: #232634;
+      --shadow: 0 10px 30px rgba(0,0,0,0.25);
+      --radius: 14px;
+      --font: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    @media (prefers-color-scheme: light) {
+      :root{
+        --bg: #f7f8fa;
+        --text: #0c0d10;
+        --muted: #5b6170;
+        --card: #ffffff;
+        --accent: #007aff;
+        --accent-2: #10b981;
+        --border: #e9ecf2;
+        --shadow: 0 8px 24px rgba(0,0,0,0.06);
+      }
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font: 16px/1.6 var(--font);
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(125,220,250,0.08), transparent 60%),
+                  radial-gradient(900px 500px at 10% 110%, rgba(158,240,192,0.10), transparent 60%),
+                  var(--bg);
+      letter-spacing: 0.2px;
+    }
+    .wrap{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+    /* top nav */
+    .top{
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      margin-bottom:32px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit;
+    }
+    .avatar{
+      width:40px; height:40px; border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: var(--shadow);
+    }
+    .name{font-weight:700; letter-spacing: 0.3px;}
+    .nav{
+      display:flex; gap:18px; flex-wrap:wrap;
+    }
+    .nav a{
+      color: var(--muted); text-decoration:none; font-weight:600;
+    }
+    .nav a:hover{ color: var(--text); }
+    .btn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 12px 16px; border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color:#001016; font-weight: 800; text-decoration:none;
+      box-shadow: var(--shadow);
+      border: 0;
+      cursor:pointer;
+    }
+    /* hero */
+    .hero{
+      display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items:center;
+    }
+    @media (max-width: 860px){
+      .hero{ grid-template-columns: 1fr; }
+    }
+    h1{font-size: clamp(34px, 6vw, 56px); line-height:1.1; margin:0 0 12px 0;}
+    .lead{font-size: clamp(16px, 2.2vw, 19px); color: var(--muted); margin-bottom:22px;}
+    .metrics{
+      display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top:22px;
+    }
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: var(--shadow);
+    }
+    .kpi{ font-size: 26px; font-weight:900; }
+    .kpi small{ font-size: 12px; color: var(--muted); display:block; margin-top:2px; }
+    .panel{
+      display:flex; flex-direction:column; gap:12px;
+    }
+    .tags{ display:flex; flex-wrap:wrap; gap:8px; }
+    .tag{
+      font: 12px/1 var(--mono);
+      padding:8px 10px; border-radius: 999px;
+      background:linear-gradient(135deg, rgba(125,220,250,0.18), rgba(158,240,192,0.18));
+      border:1px dashed var(--border);
+    }
+    /* grid sections */
+    section{ margin: 54px 0; }
+    h2{ font-size: 22px; margin:0 0 16px 0; letter-spacing:0.3px; }
+    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+    .span-4{ grid-column: span 4; }
+    .span-6{ grid-column: span 6; }
+    .span-8{ grid-column: span 8; }
+    .span-12{ grid-column: span 12; }
+    @media (max-width: 860px){
+      .grid > *{ grid-column: 1 / -1; }
+    }
+    /* timeline */
+    .timeline{ display:flex; flex-direction:column; gap:10px; }
+    .tl-item{
+      display:grid; grid-template-columns: 120px 1fr; gap:12px; align-items:start;
+      padding:12px; border-radius: var(--radius); border:1px dashed var(--border);
+      background: linear-gradient(0deg, rgba(255,255,255,0.02), transparent);
+    }
+    .tl-item b{ font-weight:800; }
+    .pill{ display:inline-block; font:12px var(--mono); padding:4px 8px; border-radius:999px; background: var(--card); border:1px solid var(--border); color:var(--muted);}
+    /* footer */
+    footer{ margin: 48px 0 10px; color: var(--muted); font-size:14px; display:flex; gap:8px; flex-wrap:wrap; justify-content:space-between; align-items:center;}
+    .links{ display:flex; gap:14px; flex-wrap:wrap;}
+    .links a{ color: var(--muted); text-decoration:none;}
+    .links a:hover{ color: var(--text); }
+    .toggle{ background:transparent; border:1px solid var(--border); color:var(--muted); padding:10px 14px; border-radius:999px; cursor:pointer; }
+    .code{ font-family: var(--mono); font-size: 13px;}
+    /* focus states */
+    a, button { outline: none; }
+    a:focus, button:focus { box-shadow: 0 0 0 3px rgba(125,220,250,0.35); border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top" aria-label="Navigation">
+      <a class="brand" href="#top">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <div class="name">Michael Singletary</div>
+          <div class="code" aria-label="Title">Senior Enterprise Endpoint Management Engineer</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Impact</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="toggle" id="themeBtn" title="Toggle theme">Toggle theme</button>
+      </nav>
+    </header>
 
-## Hello.
+    <main>
+      <section class="hero" id="about">
+        <div class="panel">
+          <h1>Managing Macs at scale. <br>Using AI to go faster.</h1>
+          <p class="lead">
+            I run Jamf for thousands of Macs at Georgetown University—designing policies, deployment flows,
+            and secure baselines. I love using AI to automate the boring parts: research, scripting,
+            and glue work that turns great ideas into reliable, repeatable outcomes.
+          </p>
+          <div class="tags" aria-label="Key capabilities">
+            <span class="tag">Jamf Pro (11.x)</span>
+            <span class="tag">macOS lifecycle</span>
+            <span class="tag">SSO / Shibboleth + Duo</span>
+            <span class="tag">CrowdStrike / Tenable</span>
+            <span class="tag">Bash • zsh • Python</span>
+            <span class="tag">AI-assisted scripting</span>
+            <span class="tag">Compliance & reporting</span>
+            <span class="tag">Zero‑touch (ADE)</span>
+          </div>
+          <div>
+            <a class="btn" href="#contact" aria-label="Get in touch">Get in touch</a>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="card">
+            <div class="metrics">
+              <div>
+                <div class="kpi">3,000+ <small>Macs managed</small></div>
+              </div>
+              <div>
+                <div class="kpi">99% <small>FileVault escrow</small></div>
+              </div>
+              <div>
+                <div class="kpi">~50% <small>time saved via AI</small></div>
+              </div>
+            </div>
+            <p class="lead" style="margin-top:14px">
+              Recent wins include Jamf license cleanup, ADE/ASM token hygiene, smart groups for
+              compliance drift, and scripted health checks that surface issues <em>before</em> users feel them.
+            </p>
+          </div>
+        </div>
+      </section>
 
-I’m an IT engineer in Washington, D.C., responsible for thousands of Mac and Windows endpoints. I earned my B.S. in Cybersecurity while being a stay-at-home dad for my first son.
+      <section id="skills">
+        <h2>Core strengths</h2>
+        <div class="grid">
+          <div class="card span-6">
+            <b>Jamf at scale</b>
+            <p>Blueprints, smart groups, controlled OS deferrals, software distribution, inventory signals, and clean‑room PreStages. I care about observability and change safety.</p>
+          </div>
+          <div class="card span-6">
+            <b>AI‑powered ops</b>
+            <p>Use LLMs to sketch scripts, document procedures, summarize logs, and prototype automations—then tighten them with tests and guardrails.</p>
+          </div>
+          <div class="card span-4">
+            <b>Security & compliance</b>
+            <p>CrowdStrike, Tenable, FileVault, bootstrap tokens, Activation Lock, and CIS-aligned baselines with sensible exceptions.</p>
+          </div>
+          <div class="card span-4">
+            <b>Automation</b>
+            <p>Shell, Python, and Jamf API for reporting, package pipelines, and “one‑click” remediation.</p>
+          </div>
+          <div class="card span-4">
+            <b>Human‑friendly docs</b>
+            <p>Short, visual runbooks that help teammates move faster and reduce escalations.</p>
+          </div>
+        </div>
+      </section>
 
-At home I enjoy playing with my two boys, reading, personal finance, Magic: The Gathering, dreaming about space, and exploring spatial computing with Apple Vision Pro ᯅ.
+      <section id="work">
+        <h2>Selected impact</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <div><span class="pill">Jamf</span></div>
+            <div><b>Scaled macOS management at Georgetown</b><br>
+              Built zero‑touch enrollment, standardized naming, and smart groups that power targeted policies.
+              Result: faster onboarding and fewer “snowflake” Macs.
+            </div>
+          </div>
+          <div class="tl-item">
+            <div><span class="pill">Security</span></div>
+            <div><b>Hardened endpoints without hurting UX</b><br>
+              FileVault key escrow/rotation, CrowdStrike/Tenable updates through Jamf, and compliance dashboards for early warnings.
+            </div>
+          </div>
+          <div class="tl-item">
+            <div><span class="pill">AI</span></div>
+            <div><b>Cut toil with AI assistants</b><br>
+              Used AI to draft scripts, analyze logs, and generate weekly status summaries. Time savings reinvested in preventative fixes.
+            </div>
+          </div>
+        </div>
+      </section>
 
-## Things I think about:
+      <section id="projects">
+        <h2>Mini case studies</h2>
+        <div class="grid">
+          <div class="card span-6">
+            <b>Jamf smart groups for DNS diagnostics</b>
+            <p>Created Extension Attributes to capture DNS state (dig/scutil) and grouped problem devices to target fixes for Zoom and BloxOne edges.</p>
+            <div class="tags"><span class="tag">Jamf EA</span><span class="tag">smart groups</span><span class="tag">Bash</span></div>
+          </div>
+          <div class="card span-6">
+            <b>SSO for Jamf Admins</b>
+            <p>Shibboleth + Duo SSO for Jamf Account (Blueprints/AI). Reduced account sprawl and enabled least‑privilege roles.</p>
+            <div class="tags"><span class="tag">SAML</span><span class="tag">IdP</span><span class="tag">Duo MFA</span></div>
+          </div>
+          <div class="card span-6">
+            <b>macOS repair guidance</b>
+            <p>Documented ADE/ASM implications for service repairs to avoid unnecessary de‑assignment, preserving Jamf trust and MDM profile continuity.</p>
+            <div class="tags"><span class="tag">ADE/ASM</span><span class="tag">Runbooks</span></div>
+          </div>
+          <div class="card span-6">
+            <b>License hygiene & reporting</b>
+            <p>Automated stale device cleanup to control Jamf licenses. Added dashboards for exec visibility and trend lines.</p>
+            <div class="tags"><span class="tag">API</span><span class="tag">Automation</span></div>
+          </div>
+        </div>
+      </section>
 
-I’m passionate about digital privacy, favoring tech and services that align with those values, and I support open-source projects. I’m focused on digital preservation, with a robust backup plan for my personal data and media to ensure it’s accessible for my family forever.
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+          <p><b>Let’s build reliable, secure, human‑friendly endpoints.</b></p>
+          LinkedIn: <a href="https://www.linkedin.com/in/michael-singletary" target="_blank" rel="noreferrer">/in/michael-singletary</a></p>
+        </div>
+      </section>
+    </main>
 
-Information security has fascinated me since childhood, when I taught myself Visual Basic to tweak AOL’s client. I’ve been reading 2600 since 2001 and published an article in the Winter 2007-2008 issue.
+    <footer>
+      <div class="links">
+        <a href="#top">Top</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="code">© <span id="y"></span> Michael Singletary</div>
+    </footer>
+  </div>
 
-I’m increasingly engaging with AI, always eager to try the latest innovations. Right now, I’m enjoying ChatGPT and Grok the most for their capabilities and insights.
-
-Sustainable energy and water infrastructure are big interests. I advocate for expanding U.S. nuclear power and investing in water desalination and purification.
-
-I believe in a strong public space program, with NASA leading humanity’s journey beyond Earth, complemented by private innovators like SpaceX.
-
-I drive an electric vehicle (EV), which I see as key to sustainable transportation. EVs cut emissions, offer smooth drives, and save me about $700 yearly charging at home. Advances in battery tech and charging infrastructure make them increasingly practical.
-
-### check me out on:
-- [X](https://x.com/singletary/)
-- [Threads](https://threads.com/singletary/)
-- [LinkedIn](https://www.linkedin.com/in/michaelsingletary/)
-- [GitHub](https://github.com/singletary)
-  
-### currently running on my Synology:
-- [Jellyfin](https://jellyfin.org/)
-- [FreshRSS](https://freshrss.org/)
-- [Wallabag](https://wallabag.org/)
-- [ArchiveBox](https://archivebox.io/)
-- [Kavita](https://www.kavitareader.com/)
-- [Firefox](https://github.com/linuxserver/docker-firefox/)
+  <script>
+    const y=document.getElementById('y'); y.textContent = new Date().getFullYear();
+    const themeBtn = document.getElementById('themeBtn');
+    themeBtn.addEventListener('click', () => {
+      // simple light/dark invert by toggling a data attribute
+      const attr = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', attr === 'light' ? 'dark' : 'light');
+      // swap root vars for manual toggle
+      const isLight = attr !== 'light';
+      if(isLight){
+        document.documentElement.style.setProperty('--bg', '#f7f8fa');
+        document.documentElement.style.setProperty('--text', '#0c0d10');
+        document.documentElement.style.setProperty('--muted', '#5b6170');
+        document.documentElement.style.setProperty('--card', '#ffffff');
+        document.documentElement.style.setProperty('--accent', '#007aff');
+        document.documentElement.style.setProperty('--accent-2', '#10b981');
+        document.documentElement.style.setProperty('--border', '#e9ecf2');
+        document.documentElement.style.setProperty('--shadow', '0 8px 24px rgba(0,0,0,0.06)');
+      }else{
+        document.documentElement.style.setProperty('--bg', '#0b0c0f');
+        document.documentElement.style.setProperty('--text', '#e6e7eb');
+        document.documentElement.style.setProperty('--muted', '#a3a7af');
+        document.documentElement.style.setProperty('--card', '#12141a');
+        document.documentElement.style.setProperty('--accent', '#7ddcfa');
+        document.documentElement.style.setProperty('--accent-2', '#9ef0c0');
+        document.documentElement.style.setProperty('--border', '#232634');
+        document.documentElement.style.setProperty('--shadow', '0 10px 30px rgba(0,0,0,0.25)');
+      }
+    });
+  </script>
+</body>
+</html>
