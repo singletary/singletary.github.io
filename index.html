@@ -4,150 +4,243 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark">
-  <title>Michael Singletary — IT Engineer</title>
-  <meta name="description" content="Senior Enterprise Endpoint Management Engineer. Jamf at scale. AI-assisted automation, scripting, and research.">
+  <title>Michael Singletary — Endpoint Management & Jamf</title>
+  <meta name="description" content="IT engineer specializing in managing thousands of Macs in higher education with Jamf, plus AI-powered automation, scripting, and secure baselines.">
   <style>
-    :root{
+    :root {
       --bg: #0b0c0f;
       --text: #e6e7eb;
-      --muted: #a3a7af;
+      --muted: #9ca0a8;
       --card: #12141a;
       --accent: #7ddcfa;
       --accent-2: #9ef0c0;
-      --border: #232634;
-      --shadow: 0 10px 30px rgba(0,0,0,0.25);
-      --radius: 14px;
-      --font: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      --border: #20232f;
+      --radius: 16px;
+      --shadow: 0 14px 35px rgba(0,0,0,0.32);
+      --font: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
       --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
     @media (prefers-color-scheme: light) {
-      :root{
+      :root {
         --bg: #f7f8fa;
         --text: #0c0d10;
         --muted: #5b6170;
         --card: #ffffff;
         --accent: #007aff;
         --accent-2: #10b981;
-        --border: #e9ecf2;
-        --shadow: 0 8px 24px rgba(0,0,0,0.06);
+        --border: #e2e5eb;
+        --shadow: 0 14px 35px rgba(0,0,0,0.06);
       }
     }
-    html,body{height:100%}
-    body{
-      margin:0;
-      font: 16px/1.6 var(--font);
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1100px 500px at 90% -10%, rgba(125,220,250,0.12), transparent 65%),
+        radial-gradient(900px 550px at 10% 120%, rgba(158,240,192,0.14), transparent 55%),
+        var(--bg);
       color: var(--text);
-      background: radial-gradient(1200px 600px at 80% -10%, rgba(125,220,250,0.08), transparent 60%),
-                  radial-gradient(900px 500px at 10% 110%, rgba(158,240,192,0.10), transparent 60%),
-                  var(--bg);
-      letter-spacing: 0.2px;
+      font: 16px/1.6 var(--font);
+      letter-spacing: 0.1px;
     }
-    .wrap{
-      max-width: 1000px;
+    .wrap {
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 28px;
+      padding: 30px 20px 50px;
     }
-    /* top nav */
-    .top{
-      display:flex; align-items:center; justify-content:space-between; gap:16px;
-      margin-bottom:32px;
+    header.top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 34px;
     }
-    .brand{
-      display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
     }
-    .avatar{
-      width:40px; height:40px; border-radius:50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      overflow: hidden;
       box-shadow: var(--shadow);
+      flex: none;
+      border: 1px solid rgba(255,255,255,0.05);
     }
-    .name{font-weight:700; letter-spacing: 0.3px;}
-    .nav{
-      display:flex; gap:18px; flex-wrap:wrap;
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
-    .nav a{
-      color: var(--muted); text-decoration:none; font-weight:600;
+    .name {
+      font-weight: 700;
+      letter-spacing: 0.15px;
     }
-    .nav a:hover{ color: var(--text); }
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding: 12px 16px; border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color:#001016; font-weight: 800; text-decoration:none;
-      box-shadow: var(--shadow);
-      border: 0;
-      cursor:pointer;
+    .sub {
+      font-size: 13px;
+      color: var(--muted);
     }
-    /* hero */
-    .hero{
-      display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items:center;
+    .nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
     }
-    @media (max-width: 860px){
-      .hero{ grid-template-columns: 1fr; }
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
     }
-    h1{font-size: clamp(34px, 6vw, 56px); line-height:1.1; margin:0 0 12px 0;}
-    .lead{font-size: clamp(16px, 2.2vw, 19px); color: var(--muted); margin-bottom:22px;}
-    .metrics{
-      display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top:22px;
+    .nav a:hover {
+      color: var(--text);
     }
-    .card{
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 880px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      header.top {
+        flex-wrap: wrap;
+      }
+    }
+    h1 {
+      font-size: clamp(34px, 5.2vw, 54px);
+      line-height: 1.05;
+      margin: 0 0 14px 0;
+    }
+    .lead {
+      font-size: clamp(16px, 2vw, 19px);
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 14px;
+    }
+    .tag {
+      background: rgba(125,220,250,0.06);
+      border: 1px dashed rgba(125,220,250,0.35);
+      border-radius: 999px;
+      padding: 6px 12px 6px 10px;
+      font-size: 12px;
+      font-family: var(--mono);
+    }
+    .pill {
+      display: inline-block;
+      font: 12px var(--mono);
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 999px;
+      padding: 4px 10px;
+      color: var(--muted);
+    }
+    .card {
       background: var(--card);
-      border:1px solid var(--border);
+      border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding:16px;
+      padding: 16px;
       box-shadow: var(--shadow);
     }
-    .kpi{ font-size: 26px; font-weight:900; }
-    .kpi small{ font-size: 12px; color: var(--muted); display:block; margin-top:2px; }
-    .panel{
-      display:flex; flex-direction:column; gap:12px;
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(90px, 1fr));
+      gap: 12px;
     }
-    .tags{ display:flex; flex-wrap:wrap; gap:8px; }
-    .tag{
-      font: 12px/1 var(--mono);
-      padding:8px 10px; border-radius: 999px;
-      background:linear-gradient(135deg, rgba(125,220,250,0.18), rgba(158,240,192,0.18));
-      border:1px dashed var(--border);
+    .kpi {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.25px;
     }
-    /* grid sections */
-    section{ margin: 54px 0; }
-    h2{ font-size: 22px; margin:0 0 16px 0; letter-spacing:0.3px; }
-    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
-    .span-4{ grid-column: span 4; }
-    .span-6{ grid-column: span 6; }
-    .span-8{ grid-column: span 8; }
-    .span-12{ grid-column: span 12; }
-    @media (max-width: 860px){
-      .grid > *{ grid-column: 1 / -1; }
+    .kpi small {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 1px;
     }
-    /* timeline */
-    .timeline{ display:flex; flex-direction:column; gap:10px; }
-    .tl-item{
-      display:grid; grid-template-columns: 120px 1fr; gap:12px; align-items:start;
-      padding:12px; border-radius: var(--radius); border:1px dashed var(--border);
-      background: linear-gradient(0deg, rgba(255,255,255,0.02), transparent);
+    section {
+      margin: 55px 0 0;
     }
-    .tl-item b{ font-weight:800; }
-    .pill{ display:inline-block; font:12px var(--mono); padding:4px 8px; border-radius:999px; background: var(--card); border:1px solid var(--border); color:var(--muted);}
-    /* footer */
-    footer{ margin: 48px 0 10px; color: var(--muted); font-size:14px; display:flex; gap:8px; flex-wrap:wrap; justify-content:space-between; align-items:center;}
-    .links{ display:flex; gap:14px; flex-wrap:wrap;}
-    .links a{ color: var(--muted); text-decoration:none;}
-    .links a:hover{ color: var(--text); }
-    .toggle{ background:transparent; border:1px solid var(--border); color:var(--muted); padding:10px 14px; border-radius:999px; cursor:pointer; }
-    .code{ font-family: var(--mono); font-size: 13px;}
-    /* focus states */
-    a, button { outline: none; }
-    a:focus, button:focus { box-shadow: 0 0 0 3px rgba(125,220,250,0.35); border-radius: 8px; }
+    h2 {
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-12 { grid-column: 1 / -1; }
+    @media (max-width: 880px) {
+      .grid > * { grid-column: 1 / -1 !important; }
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .tl-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 12px;
+      background: linear-gradient(120deg, rgba(255,255,255,0.015), rgba(255,255,255,0));
+      border: 1px dashed rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 12px 14px;
+    }
+    .tl-item-title {
+      font-weight: 700;
+    }
+    .list-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    footer {
+      margin: 50px 0 10px;
+      font-size: 13.5px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--text);
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="top" aria-label="Navigation">
+    <header class="top" id="top">
       <a class="brand" href="#top">
-        <div class="avatar" aria-hidden="true"></div>
+        <!-- replace src with your actual image or base64 version -->
+        <div class="avatar"><img src="images/michael.jpg" alt="Portrait of Michael Singletary"></div>
         <div>
           <div class="name">Michael Singletary</div>
-          <div class="code" aria-label="Title">Senior Enterprise Endpoint Management Engineer</div>
+          <div class="sub">Senior Enterprise Endpoint Management Engineer · Higher Ed</div>
         </div>
       </a>
       <nav class="nav">
@@ -155,181 +248,197 @@
         <a href="#skills">Skills</a>
         <a href="#work">Impact</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <button class="toggle" id="themeBtn" title="Toggle theme">Toggle theme</button>
       </nav>
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero" id="about">
-        <div class="panel">
-          <h1>Managing Macs at scale. <br>Using AI to go faster.</h1>
+        <div>
+          <h1>Managing Macs at scale. <br>Using AI to make it effortless.</h1>
           <p class="lead">
-            I run Jamf for thousands of Macs—designing policies, deployment flows,
-            and secure baselines. I love using AI to automate the boring parts: research, scripting,
-            and glue work that turns great ideas into reliable, repeatable outcomes.
+            I run Jamf for large higher education environments — thousands of Macs, different audiences
+            (faculty, staff, student labs), and the guardrails that keep things secure but not annoying.
+            AI is my accelerator for scripting, documentation, troubleshooting, and change planning.
           </p>
-          <div class="tags" aria-label="Key capabilities">
-            <span class="tag">Jamf Pro (11.x)</span>
+          <div class="tags" aria-label="Focus areas">
+            <span class="tag">Jamf Pro</span>
             <span class="tag">macOS lifecycle</span>
-            <span class="tag">SSO / Shibboleth + Duo</span>
-            <span class="tag">CrowdStrike / Tenable</span>
-            <span class="tag">Bash • zsh • Python</span>
-            <span class="tag">AI-assisted scripting</span>
-            <span class="tag">Compliance & reporting</span>
-            <span class="tag">Zero‑touch (ADE)</span>
+            <span class="tag">Zero-touch (ADE)</span>
+            <span class="tag">AI-assisted scripts</span>
+            <span class="tag">SSO / Duo / Shibboleth</span>
+            <span class="tag">CrowdStrike · Tenable</span>
           </div>
-          <div>
-            <a class="btn" href="#contact" aria-label="Get in touch">Get in touch</a>
-          </div>
+          <p style="color:var(--muted);margin-top:14px;font-size:14px;">
+            Current interests: smarter automated remediation, better inventory signals, and making Jamf
+            friendlier for non-Mac admins.
+          </p>
         </div>
-        <div class="panel">
+        <div>
           <div class="card">
             <div class="metrics">
               <div>
-                <div class="kpi">3,000+ <small>Macs managed</small></div>
+                <div class="kpi">3,000+</div>
+                <small>Macs managed in higher ed</small>
               </div>
               <div>
-                <div class="kpi">99% <small>FileVault escrow</small></div>
+                <div class="kpi">99%</div>
+                <small>FileVault escrowed</small>
               </div>
               <div>
-                <div class="kpi">~50% <small>time saved via AI</small></div>
+                <div class="kpi">40–50%</div>
+                <small>Ops time saved w/ AI</small>
               </div>
             </div>
-            <p class="lead" style="margin-top:14px">
-              Recent wins include Jamf license cleanup, ADE/ASM token hygiene, smart groups for
-              compliance drift, and scripted health checks that surface issues <em>before</em> users feel them.
+            <p class="lead" style="margin-top:14px;font-size:14.5px;">
+              Recent work: license cleanup, token/cert hygiene, “problem Mac” smart groups, and Jamf SSO to
+              unlock newer features.
             </p>
           </div>
         </div>
       </section>
 
+      <!-- SKILLS -->
       <section id="skills">
-        <h2>Core strengths</h2>
+        <h2>What I’m good at</h2>
         <div class="grid">
-          <div class="card span-6">
+          <div class="card span-4">
             <b>Jamf at scale</b>
-            <p>Blueprints, smart groups, controlled OS deferrals, software distribution, inventory signals, and clean‑room PreStages. I care about observability and change safety.</p>
+            <p>Smart groups that drive everything, PreStages that don’t break, software policies that work for labs and remote users, and clean scoping.</p>
+            <p class="pill">Zero-touch · ADE · ASM</p>
           </div>
-          <div class="card span-6">
-            <b>AI‑powered ops</b>
-            <p>Use LLMs to sketch scripts, document procedures, summarize logs, and prototype automations—then tighten them with tests and guardrails.</p>
+          <div class="card span-4">
+            <b>AI-powered operations</b>
+            <p>Using AI to draft scripts, generate quick runbooks, summarize long logs, and prototype automations — then hardening them for production.</p>
+            <p class="pill">LLM + scripting</p>
           </div>
           <div class="card span-4">
             <b>Security & compliance</b>
-            <p>CrowdStrike, Tenable, FileVault, bootstrap tokens, Activation Lock, and CIS-aligned baselines with sensible exceptions.</p>
+            <p>FileVault, bootstrap tokens, Activation Lock, CrowdStrike/Tenable in Jamf, plus dashboards to catch drift before users notice.</p>
+            <p class="pill">User impact aware</p>
           </div>
-          <div class="card span-4">
-            <b>Automation</b>
-            <p>Shell, Python, and Jamf API for reporting, package pipelines, and “one‑click” remediation.</p>
+          <div class="card span-6">
+            <b>Automation & APIs</b>
+            <p>Shell, zsh, Python, Jamf API to run inventory, control licensing, and build one-click remediation for common issues.</p>
+            <p class="pill">Bash · zsh · Python · Jamf API</p>
           </div>
-          <div class="card span-4">
-            <b>Human‑friendly docs</b>
-            <p>Short, visual runbooks that help teammates move faster and reduce escalations.</p>
+          <div class="card span-6">
+            <b>Higher ed constraints</b>
+            <p>Shared labs, loaners, FERPA/SOC/security reviews, change control, and people who don’t live in Jamf but still need to deploy things.</p>
+            <p class="pill">Flexible, policy-driven</p>
           </div>
         </div>
       </section>
 
+      <!-- IMPACT / TIMELINE -->
       <section id="work">
-        <h2>Selected impact</h2>
+        <h2>Recent impact</h2>
         <div class="timeline">
           <div class="tl-item">
-            <div><span class="pill">Jamf</span></div>
-            <div><b>Scaled macOS management at Georgetown</b><br>
-              Built zero‑touch enrollment, standardized naming, and smart groups that power targeted policies.
-              Result: faster onboarding and fewer “snowflake” Macs.
+            <div><span class="pill">Endpoint</span></div>
+            <div>
+              <div class="tl-item-title">Standardized macOS enrollment for higher ed</div>
+              <div>
+                Built zero-touch flow for staff, faculty, and lab devices with consistent MDM trust, baseline profiles,
+                and software delivered by role.
+              </div>
             </div>
           </div>
           <div class="tl-item">
             <div><span class="pill">Security</span></div>
-            <div><b>Hardened endpoints without hurting UX</b><br>
-              FileVault key escrow/rotation, CrowdStrike/Tenable updates through Jamf, and compliance dashboards for early warnings.
+            <div>
+              <div class="tl-item-title">Improved FileVault + sensor coverage</div>
+              <div>
+                Used smart groups + extension attributes to find non-compliant or misreporting Macs, then targeted
+                re-enrollment / key escrow / sensor updates without touching good devices.
+              </div>
             </div>
           </div>
           <div class="tl-item">
             <div><span class="pill">AI</span></div>
-            <div><b>Cut toil with AI assistants</b><br>
-              Used AI to draft scripts, analyze logs, and generate weekly status summaries. Time savings reinvested in preventative fixes.
+            <div>
+              <div class="tl-item-title">AI-assisted scripting & documentation</div>
+              <div>
+                Used AI to sketch Jamf policies, EA logic, and user-facing instructions. Result: faster change tickets,
+                clearer comms, and less back-and-forth with other IT groups.
+              </div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div><span class="pill">Hygiene</span></div>
+            <div>
+              <div class="tl-item-title">License & token hygiene</div>
+              <div>
+                Cleaned up stale devices and ensured ADE/ASM/VPP/Jamf certs were current, so large-scale deployments and
+                Jamf features didn’t break at semester start.
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- PROJECTS / CASES -->
       <section id="projects">
         <h2>Mini case studies</h2>
         <div class="grid">
           <div class="card span-6">
-            <b>Jamf smart groups for DNS diagnostics</b>
-            <p>Created Extension Attributes to capture DNS state (dig/scutil) and grouped problem devices to target fixes for Zoom and BloxOne edges.</p>
-            <div class="tags"><span class="tag">Jamf EA</span><span class="tag">smart groups</span><span class="tag">Bash</span></div>
+            <b>DNS diagnostics via Jamf</b>
+            <p>
+              Created extension attributes to collect DNS data (e.g. <code>dig</code>, <code>scutil --dns</code>) so
+              Macs with Zoom or BloxOne edge issues could be auto-grouped and remediated.
+            </p>
+            <div class="list-inline">
+              <span class="tag">Jamf EA</span>
+              <span class="tag">Smart groups</span>
+              <span class="tag">Network tooling</span>
+            </div>
           </div>
           <div class="card span-6">
-            <b>SSO for Jamf Admins</b>
-            <p>Shibboleth + Duo SSO for Jamf Account (Blueprints/AI). Reduced account sprawl and enabled least‑privilege roles.</p>
-            <div class="tags"><span class="tag">SAML</span><span class="tag">IdP</span><span class="tag">Duo MFA</span></div>
+            <b>Jamf SSO for admin access</b>
+            <p>
+              Integrated Jamf with SSO (Shibboleth/Duo-style IdP) to reduce local Jamf accounts, enable least-privilege
+              access, and unlock Jamf’s newer features for the right people.
+            </p>
+            <div class="list-inline">
+              <span class="tag">SSO</span>
+              <span class="tag">IdP</span>
+              <span class="tag">Duo</span>
+            </div>
           </div>
           <div class="card span-6">
-            <b>macOS repair guidance</b>
-            <p>Documented ADE/ASM implications for service repairs to avoid unnecessary de‑assignment, preserving Jamf trust and MDM profile continuity.</p>
-            <div class="tags"><span class="tag">ADE/ASM</span><span class="tag">Runbooks</span></div>
+            <b>Change-ready packaging</b>
+            <p>
+              Built processes to sign packages for Jamf, test in small smart groups, then widen scope —
+              especially important for big apps (GIS, creative, research tools) in higher ed.
+            </p>
+            <div class="list-inline">
+              <span class="tag">pkg signing</span>
+              <span class="tag">scoped rollout</span>
+            </div>
           </div>
           <div class="card span-6">
-            <b>License hygiene & reporting</b>
-            <p>Automated stale device cleanup to control Jamf licenses. Added dashboards for exec visibility and trend lines.</p>
-            <div class="tags"><span class="tag">API</span><span class="tag">Automation</span></div>
+            <b>License cleanup for Jamf</b>
+            <p>
+              Scripted reporting to find stale, unenrolled, or decommissioned Macs and remove them from Jamf —
+              keeping costs under control and inventory clean.
+            </p>
+            <div class="list-inline">
+              <span class="tag">Jamf API</span>
+              <span class="tag">Automation</span>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-          <p><b>Let’s build reliable, secure, human‑friendly endpoints.</b></p>
-          <p class="code">LinkedIn: <a href="https://www.linkedin.com/in/michael-singletary" target="_blank" rel="noreferrer">/in/michael-singletary</a></p>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="links">
-        <a href="#top">Top</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="code">© <span id="y"></span> Michael Singletary</div>
+      <div>© <span id="y"></span> Michael Singletary</div>
+      <div>Higher ed · Jamf · AI for IT</div>
     </footer>
   </div>
 
   <script>
-    const y=document.getElementById('y'); y.textContent = new Date().getFullYear();
-    const themeBtn = document.getElementById('themeBtn');
-    themeBtn.addEventListener('click', () => {
-      // simple light/dark invert by toggling a data attribute
-      const attr = document.documentElement.getAttribute('data-theme');
-      document.documentElement.setAttribute('data-theme', attr === 'light' ? 'dark' : 'light');
-      // swap root vars for manual toggle
-      const isLight = attr !== 'light';
-      if(isLight){
-        document.documentElement.style.setProperty('--bg', '#f7f8fa');
-        document.documentElement.style.setProperty('--text', '#0c0d10');
-        document.documentElement.style.setProperty('--muted', '#5b6170');
-        document.documentElement.style.setProperty('--card', '#ffffff');
-        document.documentElement.style.setProperty('--accent', '#007aff');
-        document.documentElement.style.setProperty('--accent-2', '#10b981');
-        document.documentElement.style.setProperty('--border', '#e9ecf2');
-        document.documentElement.style.setProperty('--shadow', '0 8px 24px rgba(0,0,0,0.06)');
-      }else{
-        document.documentElement.style.setProperty('--bg', '#0b0c0f');
-        document.documentElement.style.setProperty('--text', '#e6e7eb');
-        document.documentElement.style.setProperty('--muted', '#a3a7af');
-        document.documentElement.style.setProperty('--card', '#12141a');
-        document.documentElement.style.setProperty('--accent', '#7ddcfa');
-        document.documentElement.style.setProperty('--accent-2', '#9ef0c0');
-        document.documentElement.style.setProperty('--border', '#232634');
-        document.documentElement.style.setProperty('--shadow', '0 10px 30px rgba(0,0,0,0.25)');
-      }
-    });
+    document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
